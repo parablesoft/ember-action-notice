@@ -4,12 +4,12 @@
   color: #777;
   margin-left: 10px;
 }
-.save-notice.hidden-notice {
+.save-notice.hidden-notice, .block-save-notice.hidden-notice {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
-.save-notice.visible-notice {
+.save-notice.visible-notice, .block-save-notice.visible-notice {
   background-color: #ffffcc;
   visibility: visible;
   opacity: 1;
