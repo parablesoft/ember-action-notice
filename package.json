@@ -1,6 +1,6 @@
 {
   "name": "ember-action-notice",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "WIP: Ember addon for an inline flash notice.",
   "keywords": [
     "ember-addon"
