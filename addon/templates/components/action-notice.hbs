@@ -1,7 +1,7 @@
 {{#if hasBlock}}
-<div class="block-save-notice {{if show 'visible-notice' 'hidden-notice'}}">
-  {{yield}}
-</div>
+  <div class="block-save-notice {{if show 'visible-notice' 'hidden-notice'}}">
+    {{yield}}
+  </div>
 {{else}}
-<span class="save-notice {{if show 'visible-notice' 'hidden-notice'}}">{{message}}</span>
+  <span class="save-notice {{if show 'visible-notice' 'hidden-notice'}}">{{message}}</span>
 {{/if}}
