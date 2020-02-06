@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import { later, cancel } from '@ember/runloop';
+import Component from '@ember/component';
+import { set, get, observer } from '@ember/object';
 import layout from '../templates/components/action-notice';
-
-const{observer,Component,get,set} = Ember;
 
 export default Component.extend({
   layout,
@@ -14,7 +14,7 @@ export default Component.extend({
 
     let {show,interval} = this.getProperties("show","interval");
     if(!show){return;}
-    let hideIntervalId = Ember.run.later(this,function(){
+    let hideIntervalId = later(this,function(){
       set(this,"show",false);
       set(this,"hideIntervalId",null);
     },interval);
@@ -28,7 +28,7 @@ export default Component.extend({
     let hideIntervalId = get(this,"hideIntervalId");
     if(hideIntervalId){
       set(this,"show",false);
-      Ember.run.cancel(hideIntervalId);
+      cancel(hideIntervalId);
     }
   }
 

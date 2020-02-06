@@ -1,0 +1,50 @@
+{
+  "name": "ember-action-notice",
+  "version": "0.0.3",
+  "description": "WIP: Ember addon for an inline flash notice.",
+  "keywords": [
+    "ember-addon"
+  ],
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember try:each"
+  },
+  "repository": "git@github.com:parablesoft/email-modal.git",
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "author": "Vic Amuso",
+  "license": "MIT",
+  "devDependencies": {
+    "broccoli-asset-rev": "^3.0.0",
+    "ember-ajax": "^3.1.0",
+    "ember-cli": "3.3.0",
+    "ember-cli-app-version": "^3.2.0",
+    "ember-cli-dependency-checker": "^3.0.0",
+    "ember-cli-htmlbars-inline-precompile": "^1.0.3",
+    "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-qunit": "^4.3.2",
+    "ember-cli-release": "^1.0.0-beta.2",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-test-loader": "^2.2.0",
+    "ember-cli-uglify": "^2.1.0",
+    "ember-data": "^3.3.1",
+    "ember-disable-prototype-extensions": "^1.1.0",
+    "ember-export-application-global": "^2.0.0",
+    "ember-load-initializers": "^1.1.0",
+    "ember-resolver": "^5.0.1",
+    "loader.js": "^4.0.10"
+  },
+  "dependencies": {
+    "ember-cli-babel": "^6.16.0",
+    "ember-cli-htmlbars": "3.0.0"
+  },
+  "ember-addon": {
+    "configPath": "tests/dummy/config"
+  }
+}
